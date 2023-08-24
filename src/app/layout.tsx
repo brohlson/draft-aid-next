@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Draft Aid",
-  description: "Draft aid using data from Underdog.io",
+  title: "Draft Aid - Underdog Fantasy Rankings",
+  description: "Draft aid tool using data from Underdog Fantasy rankings",
 };
 
 export default function RootLayout({
