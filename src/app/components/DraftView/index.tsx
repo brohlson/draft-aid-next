@@ -69,6 +69,7 @@ function DraftView() {
           height={columnHeight}
           onSelect={handleDeselectPlayer}
           showIndex
+          pinToBottom
         />
       </div>
     </div>
