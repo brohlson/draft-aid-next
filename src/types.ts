@@ -4,3 +4,5 @@ export type Player = {
   adp: number;
   position: "WR" | "RB" | "QB" | "TE";
 };
+
+export type PlayerHandler = (player: Player) => void;
