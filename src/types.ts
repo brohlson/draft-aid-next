@@ -1,5 +1,5 @@
 export type Player = {
-  id: "string";
+  id: string;
   name: string;
   adp: number;
   position: "WR" | "RB" | "QB" | "TE";

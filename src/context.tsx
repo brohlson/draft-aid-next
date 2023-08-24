@@ -1,8 +1,8 @@
 "use client";
 
 import React, { ReactNode, useMemo, useState } from "react";
-import { Player, PlayerHandler } from "./types";
 import { keyBy, noop } from "lodash";
+import { Player, PlayerHandler } from "./types";
 import raw from "./data";
 
 export interface AppContext {

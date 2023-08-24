@@ -25,9 +25,9 @@ function PlayerRow({ player, onSelect, index }: PlayerRowProps) {
         mapPositionToColor[player.position]
       )}
     >
-      <div className="flex">{index || player.adp}</div>
-      <div className="flex-grow text-center">{player.name}</div>
-      <div className="flex">{player.position}</div>
+      <div className="flex select-none">{index || player.adp}</div>
+      <div className="flex-grow text-center select-none">{player.name}</div>
+      <div className="flex select-none">{player.position}</div>
     </div>
   );
 }
