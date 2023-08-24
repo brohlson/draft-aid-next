@@ -27,6 +27,7 @@ function DraftView() {
           players={availablePlayers}
           height={columnHeight}
           onSelect={handleSelectPlayer}
+          withFiltering
         />
       </div>
       <div className={colClass}>
