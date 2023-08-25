@@ -4,11 +4,7 @@ function Footer() {
   return (
     <header className="p-4 bg-gray-200 text-center">
       <small className="text-gray-600">
-        Built by{" "}
-        <a className="underline" href="https://chaseohlson.com" target="blank">
-          Chase
-        </a>
-        , inspired by{" "}
+        Inspired by{" "}
         <a className="underline" href="http://www.borischen.co/" target="blank">
           Boris
         </a>{" "}
@@ -23,7 +19,8 @@ function Footer() {
           target="blank"
         >
           Underdog
-        </a>
+        </a>{" "}
+        refreshed every hour
       </small>
     </header>
   );
