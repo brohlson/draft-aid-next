@@ -3,7 +3,7 @@
 import React, { ReactNode, useMemo, useState } from "react";
 import { keyBy, noop } from "lodash";
 import { Player, PlayerHandler } from "./types";
-import raw from "./data";
+import { rawData } from "./data";
 
 export interface AppContext {
   availablePlayers: Player[];
@@ -30,11 +30,12 @@ export const AppContext = React.createContext<AppContext>({
 export const useAppContext = () => React.useContext(AppContext);
 
 interface Props {
+  liveData?: Player[];
   children: ReactNode;
 }
 
-export default function AppProvider({ children }: Props) {
-  const [players] = useState<Player[]>(raw as Player[]);
+export default function AppProvider({ liveData, children }: Props) {
+  const [players] = useState<Player[]>(liveData || (rawData as Player[]));
   const [selected, setSelected] = useState<Player["id"][]>([]);
   const playerDictionary = keyBy(players, "id");
 
