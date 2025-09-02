@@ -1,4 +1,4 @@
-import data from "./rankings-2.csv";
+import data from "./rankings-3.csv";
 
 export const formatRawData = (data) =>
   data.slice(0, 300).map((d) => ({
