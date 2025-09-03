@@ -1,9 +1,9 @@
 "use client";
 
-import React, { ReactNode, useMemo, useState } from "react";
 import { keyBy, noop } from "lodash";
-import { Player, PlayerHandler } from "./types";
+import React, { ReactNode, useMemo, useState } from "react";
 import { rawData } from "./data";
+import { Player, PlayerHandler } from "./types";
 
 export interface AppContext {
   availablePlayers: Player[];
@@ -33,6 +33,8 @@ interface Props {
   liveData?: Player[];
   children: ReactNode;
 }
+
+console.log(rawData);
 
 export default function AppProvider({ liveData, children }: Props) {
   const [players] = useState<Player[]>(liveData || (rawData as Player[]));

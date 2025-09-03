@@ -36,7 +36,7 @@ export default async function RootLayout({
   const liveData = await fetchLiveData();
   return (
     <AppProvider liveData={rawData}>
-      <html lang="en">
+      <html>
         <body className={inter.className}>{children}</body>
       </html>
     </AppProvider>
